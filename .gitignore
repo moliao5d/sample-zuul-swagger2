@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-target
+target/
+*.class
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -28,3 +29,6 @@ out/
 /*/target
 target
 /halo-admin-backend/target
+
+sample-client-b/
+logs/

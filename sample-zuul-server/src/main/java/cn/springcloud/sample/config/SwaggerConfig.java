@@ -15,11 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 public class SwaggerConfig {
 
-	@Autowired
 	ZuulProperties properties;
 
-	@Primary
-	@Bean
 	public SwaggerResourcesProvider swaggerResourcesProvider() {
 		return () -> {
 			List<SwaggerResource> resources = new ArrayList<>();

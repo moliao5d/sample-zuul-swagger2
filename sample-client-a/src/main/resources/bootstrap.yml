@@ -1,5 +1,5 @@
 server:
-  port: 7070
+  port: 8889
 spring:
   application:
     name: client-a
@@ -9,3 +9,6 @@ eureka:
       defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8888}/eureka/
   instance:
     prefer-ip-address: true
+    app-group-name: x
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 1
